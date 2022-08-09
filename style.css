@@ -13,7 +13,7 @@ html, body {
     width: 100%;
     background-color: #030303;
     background-image: url(eiu.png);
-    
+    scroll-behavior: smooth;
 }
 
 /*--text selection colour--*/
@@ -28,14 +28,16 @@ nav {
     width: 100%;
     text-align:right;
     padding-top:2vw;
-    background: linear-gradient(180deg, rgba(0,0,0,0.8295693277310925) 0%, rgba(0,0,0,0.5046393557422969) 52%, rgba(0,0,0,0) 100%);}
+    background: linear-gradient(180deg, rgba(0,0,0,0.8295693277310925) 0%, rgba(0,0,0,0.5046393557422969) 52%, rgba(0,0,0,0) 100%);
+
+}
 
 nav a {
     transition-duration: 0.2s;
     padding:8px 12px;
     margin-right:2vw;
     font-weight: 700;
-    color: #ffffff;
+    color: white;
     text-decoration:none;
     text-align: center;
 }
@@ -67,8 +69,6 @@ nav a:hover {
 
   
 /* --------------------------------------------------------- */
-
-
 .pageheader {
     float: left;
     padding-top: 14vh;
@@ -76,10 +76,10 @@ nav a:hover {
     padding-right:33vw;
     min-height: 90vh;
     width:max-content
-
 }
-/*--everything but header--*/
 
+
+/*--everything but header--*/
 .container {
     width:100%;
 }
@@ -123,6 +123,7 @@ h1 {
     box-shadow: 2vw 2vw 0px #ffffff;
     transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-duration: 0.4s;
+    overflow-x: hidden;
 }
 
 .imgaffan:hover {
@@ -157,17 +158,20 @@ h1 {
 }
 
 
-.about{
-    width:90%;
-    margin: auto; 
-    text-align:center;
+.about {
+    width: 90%;
+    margin: 0 auto; 
+    margin-top: -20vh;
+    padding-top: 20vh;
+    text-align: center;
 }
 
 .about h4{
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
-    
+    text-align: justify;
+    line-height: 2.5rem;
 }
 
 h4 {
@@ -179,7 +183,8 @@ h4 {
 .work {
     width: 90%; 
     margin: auto; 
-    margin-top: 10vh;
+    margin-top: 2vh;
+    padding-top: 8vh;
     text-align: right; 
 }
 
