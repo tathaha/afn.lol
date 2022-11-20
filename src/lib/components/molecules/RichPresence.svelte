@@ -57,7 +57,7 @@
 						lanyard.send(
 							JSON.stringify({
 								op: 2,
-								d: { subscribe_to_id: '420043923822608384' }
+								d: { subscribe_to_id: '685716988471148552' }
 							})
 						);
 						break;
